@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, Shield, Cpu, Activity, ExternalLink } from 'lucide-react';
+import heroImg from '../assets/images/hero_reel_cinematic_1790810357834.jpg';
 
 interface HeroSceneProps {
   onOpenPartnerModal: () => void;
@@ -12,7 +13,7 @@ export const HeroScene: React.FC<HeroSceneProps> = ({ onOpenPartnerModal, onExpl
       {/* Background Image Layer with atmospheric vignette & grain */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_reel_cinematic_1790810357834.jpg"
+          src={heroImg || '/images/hero_reel.jpg'}
           alt="릴통 프리미엄 아카이브 비주얼"
           className="w-full h-full object-cover object-center opacity-40 mix-blend-screen scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"

@@ -153,10 +153,19 @@ export const ArchiveCollectionScene: React.FC<ArchiveCollectionSceneProps> = ({
               >
                 <img
                   src={game.image}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (game.id === 'sea-story') target.src = '/images/game_sea_story.jpg';
+                    else if (game.id === 'ocean-paradise') target.src = '/images/game_ocean_paradise.jpg';
+                    else if (game.id === 'son-goku') target.src = '/images/game_songoku.jpg';
+                    else if (game.id === 'golden-castle') target.src = '/images/game_golden_castle.jpg';
+                    else if (game.id === 'yamato') target.src = '/images/game_yamato.jpg';
+                    else if (game.id === 'aladdin') target.src = '/images/game_aladdin.jpg';
+                  }}
                   alt={`${game.nameKo} 대표 이미지`}
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700 brightness-95 group-hover/img:brightness-105"
                   referrerPolicy="no-referrer"
-                  loading="lazy"
+                  loading="eager"
                 />
 
                 {/* Dark gradient vignette */}

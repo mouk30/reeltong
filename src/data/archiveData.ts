@@ -1,3 +1,10 @@
+import seaStoryImg from '../assets/images/game_sea_story_1790810370437.jpg';
+import oceanParadiseImg from '../assets/images/game_ocean_jackpot_1791599496505.jpg';
+import sonGokuImg from '../assets/images/game_songoku_myth_1790810391610.jpg';
+import goldenCastleImg from '../assets/images/game_golden_knight_1791599437594.jpg';
+import yamatoImg from '../assets/images/game_yamato_fleet_1791599464432.jpg';
+import aladdinImg from '../assets/images/game_aladdin_lamp_1791598187692.jpg';
+
 export interface GameProfile {
   id: string;
   number: string;
@@ -39,7 +46,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-blue-950 via-slate-900 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(30, 58, 138, 0.35), transparent 70%)',
     accentHex: '#38bdf8',
-    image: '/src/assets/images/game_sea_story_1790810370437.jpg',
+    image: seaStoryImg || '/images/game_sea_story.jpg',
     summary: '거친 폭풍우와 번개 사이를 가르고 솟구치는 거대한 죠스급 백상어의 무자비한 이빨! 하이롤러 매니아들이 열광하는 최고 배당의 정통 릴게임.',
     characteristics: [
       '잔잔한 해저 사운드트랙과 고래·황금물고기 등 시인성 높은 심볼 설계',
@@ -74,7 +81,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-cyan-950 via-slate-900 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(6, 182, 212, 0.3), transparent 70%)',
     accentHex: '#22d3ee',
-    image: '/src/assets/images/game_ocean_jackpot_1791599496505.jpg',
+    image: oceanParadiseImg || '/images/game_ocean_paradise.jpg',
     summary: '에메랄드빛 석양 바다 위를 가르는 크루즈와 보석 링을 관통하는 거대 상어의 황금빛 코인 폭포! 화려한 20 페이라인 트로피컬 액션.',
     characteristics: [
       '태양광 굴절 광원 효과와 펄 에메랄드 그래픽 팔레트 적용',
@@ -108,7 +115,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-red-950 via-amber-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(239, 68, 68, 0.3), transparent 70%)',
     accentHex: '#f87171',
-    image: '/src/assets/images/game_songoku_myth_1790810391610.jpg',
+    image: sonGokuImg || '/images/game_songoku.jpg',
     summary: '황금빛 초싸이언 손오공의 폭발적인 에너지와 천상 선녀의 신비로운 사랑이 결합된 명작 판타지 릴게임! 하트 트리거 시 황금 잭팟 폭발.',
     characteristics: [
       '캐릭터별 고유 보너스 컷씬 (여의봉 회전, 파초선 돌풍 등)',
@@ -142,7 +149,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-amber-950 via-yellow-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(245, 158, 11, 0.3), transparent 70%)',
     accentHex: '#fbbf24',
-    image: '/src/assets/images/game_golden_knight_1791599437594.jpg',
+    image: goldenCastleImg || '/images/game_golden_castle.jpg',
     summary: '순백마를 탄 황금 기사의 성스러운 검과 날개 달린 황금 요정의 마법진이 황금 성채의 거대한 비밀 문을 활짝 엽니다! 고배당 40 페이라인.',
     characteristics: [
       '골드 & 흑요석(Obsidian)의 극명한 대비가 돋보이는 고딕 아키텍처 비주얼',
@@ -176,7 +183,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-indigo-950 via-slate-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(99, 102, 241, 0.3), transparent 70%)',
     accentHex: '#818cf8',
-    image: '/src/assets/images/game_yamato_fleet_1791599464432.jpg',
+    image: yamatoImg || '/images/game_yamato.jpg',
     summary: '황금 제독의 지휘 아래 거대한 황금 전함 야마토가 폭풍우를 가르고 진격합니다! 주포 일제 사격 애니메이션과 황금검 발도 연출 잭팟.',
     characteristics: [
       '스피디한 릴 가속 및 급제동 스톱 애니메이션',
@@ -211,7 +218,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeColor: 'from-amber-950 via-purple-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(168, 85, 247, 0.25), transparent 70%)',
     accentHex: '#c084fc',
-    image: '/src/assets/images/game_aladdin_lamp_1791598187692.jpg',
+    image: aladdinImg || '/images/game_aladdin.jpg',
     summary: '아라비안나이트의 신비로운 밤하늘 아래 보물 산더미와 요술 램프에서 피어오르는 보랏빛 연기! 거인 지니가 3가지 소원을 무작위 선사합니다.',
     characteristics: [
       '자수정과 황금 보석, 마법 램프 등 아라비아 무드의 이국적 심볼',
