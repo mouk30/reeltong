@@ -16,7 +16,7 @@ import { PartnerAccessModal } from './components/PartnerAccessModal';
 export default function App() {
   const [partnerModalOpen, setPartnerModalOpen] = useState(false);
 
-  const TARGET_URL = 'https://xoreel.net';
+  const TARGET_URL = 'https://reelkings.kr';
 
   const handleOpenPartner = () => {
     window.open(TARGET_URL, '_blank', 'noopener,noreferrer');

@@ -9,7 +9,7 @@ interface PartnerAccessModalProps {
 export const PartnerAccessModal: React.FC<PartnerAccessModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const partnerUrl = 'https://xoreel.net';
+  const partnerUrl = 'https://reelkings.kr';
 
   const handleOpenPartner = () => {
     window.open(partnerUrl, '_blank', 'noopener,noreferrer');
@@ -34,10 +34,10 @@ export const PartnerAccessModal: React.FC<PartnerAccessModalProps> = ({ isOpen, 
           </div>
           <h3 className="text-2xl font-black text-white font-editorial">
             릴통 공식 인증 파트너 <br />
-            <span className="text-amber-400">‘릴천지’</span> 바로가기
+            <span className="text-amber-400">‘릴킹스 (reelkings.kr)’</span> 바로가기
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 font-serif-kr">
-            릴통의 3대 안전 검증 규격(100% 무설치 브라우저, SSL 256-bit 암호화, 14종 정통 게임 구동)을 통과한 파트너 플랫폼으로 이동합니다.
+            릴통의 3대 안전 검증 규격(100% 무설치 브라우저, SSL 256-bit 암호화, 14종 정통 게임 구동)을 통과한 파트너 플랫폼(reelkings.kr)으로 이동합니다.
           </p>
         </div>
 
