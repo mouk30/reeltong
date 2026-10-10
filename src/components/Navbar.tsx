@@ -45,22 +45,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPartnerModal, onOpenSandbo
           {/* Zone 2: 4-6 clean text navigation links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
             <a
-              href="#about"
-              className="hover:text-amber-400 transition-colors py-1"
-            >
-              소개 및 원리
-            </a>
-            <a
-              href="#featured"
-              className="hover:text-amber-400 transition-colors py-1"
-            >
-              바다이야기
-            </a>
-            <a
               href="#archive"
-              className="hover:text-amber-400 transition-colors py-1"
+              className="text-amber-400 hover:text-amber-300 transition-colors py-1 font-semibold flex items-center gap-1.5"
             >
-              6대 컬렉션
+              <span>6대 아카이브</span>
             </a>
             <a
               href="#rng-sandbox"
@@ -80,6 +68,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPartnerModal, onOpenSandbo
               className="hover:text-amber-400 transition-colors py-1"
             >
               스펙 비교
+            </a>
+            <a
+              href="#featured"
+              className="hover:text-amber-400 transition-colors py-1"
+            >
+              바다이야기 심층
+            </a>
+            <a
+              href="#about"
+              className="hover:text-amber-400 transition-colors py-1"
+            >
+              소개 및 원리
             </a>
             <a
               href="#faq"
@@ -129,25 +129,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPartnerModal, onOpenSandbo
         {mobileMenuOpen && (
           <div className="md:hidden mt-3 pt-3 pb-4 border-t border-slate-800 bg-[#07090E]/95 backdrop-blur-xl rounded-b-xl px-2 space-y-2">
             <a
-              href="#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
-            >
-              소개 및 원리
-            </a>
-            <a
-              href="#featured"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
-            >
-              바다이야기 심층 분석
-            </a>
-            <a
               href="#archive"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
+              className="block px-3 py-2 text-sm text-amber-400 font-bold rounded-md hover:bg-slate-800/50"
             >
-              6대 릴게임 아카이브
+              6대 릴게임 아카이브 (3x3 컬렉션)
             </a>
             <a
               href="#rng-sandbox"
@@ -170,6 +156,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPartnerModal, onOpenSandbo
               className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
             >
               게임별 종합 비교표
+            </a>
+            <a
+              href="#featured"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
+            >
+              바다이야기 심층 분석
+            </a>
+            <a
+              href="#about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400 rounded-md hover:bg-slate-800/50"
+            >
+              소개 및 원리
             </a>
             <a
               href="#glossary"

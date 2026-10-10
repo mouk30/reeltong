@@ -41,18 +41,10 @@ export default function App() {
         {/* SCENE 01: Cinematic Hero */}
         <HeroScene
           onOpenPartnerModal={handleOpenPartner}
-          onExploreArchive={() => handleScrollToSection('featured')}
+          onExploreArchive={() => handleScrollToSection('archive')}
         />
 
-        {/* SCENE 02: Introduction & Manifesto */}
-        <IntroScene />
-
-        {/* SCENE 03: Featured Master Game (바다이야기) */}
-        <FeaturedGameScene
-          onOpenPartnerModal={handleOpenPartner}
-        />
-
-        {/* SCENE 04: 6 Pillars Game Archive Collection */}
+        {/* SCENE 04 (맨 상단 배치): 6대 릴게임 아카이브 컬렉션 (3x3 그리드) */}
         <ArchiveCollectionScene
           onOpenPartnerModal={handleOpenPartner}
           onSelectGameForInspection={() => handleScrollToSection('rng-sandbox')}
@@ -76,6 +68,14 @@ export default function App() {
 
         {/* SCENE 09: FAQ (16 Verified Q&As structured for AEO) */}
         <FaqScene />
+
+        {/* SCENE 02 (하단 이동): Introduction & Manifesto */}
+        <IntroScene />
+
+        {/* SCENE 03 (하단 이동): Featured Master Game (바다이야기 심층 분석) */}
+        <FeaturedGameScene
+          onOpenPartnerModal={handleOpenPartner}
+        />
 
         {/* SCENE 11: Final Verified Portal CTA */}
         <FinalCtaScene

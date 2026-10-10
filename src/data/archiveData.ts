@@ -16,6 +16,14 @@ export interface GameProfile {
   versions: { version: string; desc: string }[];
   bonusTrigger: string;
   recommendedFor: string;
+  categoryBadge: string;
+  userCount: string;
+  statusBadge: string;
+  statusType: 'purple' | 'red' | 'amber';
+  rtp: string;
+  jackpot: string;
+  volatility: string;
+  featureBullets: string[];
 }
 
 export const GAMES_ARCHIVE: GameProfile[] = [
@@ -24,7 +32,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     number: '01',
     nameKo: '바다이야기',
     nameEn: 'Sea Story',
-    tagline: '20년 역사의 심해 미학, 대한민국 릴게임의 원점이자 표준',
+    tagline: '백경 해무 번개 & 분노의 상어 연타 잭팟',
     reels: '3릴 / 5릴 (버전별 상이)',
     paylines: '단일 라인 ~ 멀티 15 페이라인',
     tempo: '느긋함 (Relaxed)',
@@ -32,7 +40,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeGradient: 'radial-gradient(ellipse at top, rgba(30, 58, 138, 0.35), transparent 70%)',
     accentHex: '#38bdf8',
     image: '/src/assets/images/game_sea_story_1790810370437.jpg',
-    summary: '짙은 남청색 심해 배경과 여유로운 해양 생물 유영 애니메이션으로 심리적 안정감을 제공하는 대표 타이틀. 릴게임 입문자가 릴의 회전 주기와 심볼 배치 구조를 직관적으로 익히기에 최적화되어 있습니다.',
+    summary: '거친 폭풍우와 번개 사이를 가르고 솟구치는 거대한 죠스급 백상어의 무자비한 이빨! 하이롤러 매니아들이 열광하는 최고 배당의 정통 릴게임.',
     characteristics: [
       '잔잔한 해저 사운드트랙과 고래·황금물고기 등 시인성 높은 심볼 설계',
       '버전 2, 3, 5에 따른 릴 회전 수 및 멀티 페이라인의 진화적 단계 제공',
@@ -44,22 +52,30 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '바다이야기 5 (Multi-Line)', desc: '5개 릴 및 멀티 페이라인 알고리즘 적용. 대각선 및 지그재그 조합 경우의 수 확장.' }
     ],
     bonusTrigger: '황금 고래 또는 상어 3연속 심볼 정렬 시 해저 동굴 보너스 모드 진입',
-    recommendedFor: '릴게임 입문자 및 느긋하고 편안한 연출을 선호하는 분석형 플레이어'
+    recommendedFor: '릴게임 입문자 및 느긋하고 편안한 연출을 선호하는 분석형 플레이어',
+    categoryBadge: '#1 바다 시리즈',
+    userCount: '1,320명 이용중',
+    statusBadge: '환수율 98.5%',
+    statusType: 'purple',
+    rtp: 'RTP 98.5%',
+    jackpot: '₩89,320,000',
+    volatility: '초고변동',
+    featureBullets: ['번개 스톰 특수 예시 사운드', '죠스 와일드 바이트 콤보']
   },
   {
     id: 'ocean-paradise',
     number: '02',
     nameKo: '오션파라다이스',
     nameEn: 'Ocean Paradise',
-    tagline: '에메랄드빛 열대 산호초와 트로피컬 럭셔리의 화려한 재해석',
+    tagline: '황금 링 다이아몬드 점프 & 파라다이스 잭팟',
     reels: '5릴 3열',
     paylines: '20 페이라인',
     tempo: '다이내믹 (Dynamic)',
     themeColor: 'from-cyan-950 via-slate-900 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(6, 182, 212, 0.3), transparent 70%)',
     accentHex: '#22d3ee',
-    image: '/src/assets/images/game_ocean_paradise_1790810380306.jpg',
-    summary: '바다이야기의 심해 무드와 달리 환상적인 산호초와 에메랄드 석양을 테마로 한 럭셔리 라인업. 밝고 경쾌한 릴 사운드와 화려한 트로피컬 컷씬이 특징입니다.',
+    image: '/src/assets/images/game_ocean_jackpot_1791599496505.jpg',
+    summary: '에메랄드빛 석양 바다 위를 가르는 크루즈와 보석 링을 관통하는 거대 상어의 황금빛 코인 폭포! 화려한 20 페이라인 트로피컬 액션.',
     characteristics: [
       '태양광 굴절 광원 효과와 펄 에메랄드 그래픽 팔레트 적용',
       '스프레드 와일드(Spread Wild) 심볼을 통한 연속 라인 연결 기회',
@@ -70,14 +86,22 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '오션파라다이스 리마스터', desc: 'HTML5 60fps 무설치 브라우저 최적화 엔진 탑재, 20 페이라인 완벽 구현.' }
     ],
     bonusTrigger: '조개 속 흑진주 스캐터 심볼 3개 이상 동시 착지 시 프리 스핀 10회 트리거',
-    recommendedFor: '화사하고 고급스러운 시각 효과와 다채로운 페이라인 조합을 즐기는 이용자'
+    recommendedFor: '화사하고 고급스러운 시각 효과와 다채로운 페이라인 조합을 즐기는 이용자',
+    categoryBadge: '#2 트로피컬 바다',
+    userCount: '1,540명 이용중',
+    statusBadge: '인기 폭발',
+    statusType: 'red',
+    rtp: 'RTP 98.3%',
+    jackpot: '₩74,500,000',
+    volatility: '고변동',
+    featureBullets: ['황금 보석 링 관통 스캐터', '크루즈 선상 코인 샤워 피버']
   },
   {
     id: 'son-goku',
     number: '03',
-    nameKo: '손오공',
+    nameKo: '손오공 릴게임',
     nameEn: 'Son Goku (Monkey King)',
-    tagline: '서유기 대서사시의 인물 조합이 만들어내는 서사적 컷씬 연출',
+    tagline: '초싸이언 황금 아우라 파워업 & 천상 로맨스 보너스',
     reels: '5릴 3열',
     paylines: '9 ~ 25 페이라인',
     tempo: '스토리형 (Narrative)',
@@ -85,7 +109,7 @@ export const GAMES_ARCHIVE: GameProfile[] = [
     themeGradient: 'radial-gradient(ellipse at top, rgba(239, 68, 68, 0.3), transparent 70%)',
     accentHex: '#f87171',
     image: '/src/assets/images/game_songoku_myth_1790810391610.jpg',
-    summary: '손오공, 저팔계, 사오정, 삼장법사 등 서유기 속 고유 캐릭터들이 심볼로 등장하여 조합에 따라 각기 다른 서사적 전투와 비상 컷씬을 선보이는 엔터테인먼트 특화 릴게임입니다.',
+    summary: '황금빛 초싸이언 손오공의 폭발적인 에너지와 천상 선녀의 신비로운 사랑이 결합된 명작 판타지 릴게임! 하트 트리거 시 황금 잭팟 폭발.',
     characteristics: [
       '캐릭터별 고유 보너스 컷씬 (여의봉 회전, 파초선 돌풍 등)',
       '단순 숫자가 아닌 등장인물 조합별 차등 승수 테이블 적용',
@@ -96,22 +120,30 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '신 손오공 파천황', desc: '천계 대전 보너스 씬 추가 및 확장 와일드 여의봉 심볼 탑재.' }
     ],
     bonusTrigger: '근두운 스캐터 심볼 발동 시 요괴 격퇴 미니 보너스 스테이지 진입',
-    recommendedFor: '스토리 컷씬과 캐릭터 인터랙션을 중요시하는 엔터테인먼트 중심 유저'
+    recommendedFor: '스토리 컷씬과 캐릭터 인터랙션을 중요시하는 엔터테인먼트 중심 유저',
+    categoryBadge: '#3 신화·판타지',
+    userCount: '1,670명 이용중',
+    statusBadge: '인기 폭발',
+    statusType: 'red',
+    rtp: 'RTP 98.1%',
+    jackpot: '₩58,900,000',
+    volatility: '높음',
+    featureBullets: ['초싸이언 손오공 파워업', '천상선녀 하트 보너스']
   },
   {
     id: 'golden-castle',
     number: '04',
-    nameKo: '황금성',
-    nameEn: 'Golden Castle',
-    tagline: '금빛 보물 금고와 묵직한 고딕 건축이 선사하는 다크 럭셔리',
+    nameKo: '황금성의 기사',
+    nameEn: 'Golden Castle Knight',
+    tagline: '황금 백마의 기사 & 천상 요정의 마법 잭팟',
     reels: '5릴 4열 (확장형)',
     paylines: '40 페이라인',
     tempo: '다이내믹 (Dynamic)',
     themeColor: 'from-amber-950 via-yellow-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(245, 158, 11, 0.3), transparent 70%)',
     accentHex: '#fbbf24',
-    image: '/src/assets/images/hero_reel_cinematic_1790810357834.jpg',
-    summary: '황금 성채와 다이아몬드, 보물 상자, 고대 황금 열쇠를 모티프로 한 중후한 릴게임. 묵직한 금속 회전음과 40개에 달하는 촘촘한 페이라인 구조로 긴장감 있는 전개를 선사합니다.',
+    image: '/src/assets/images/game_golden_knight_1791599437594.jpg',
+    summary: '순백마를 탄 황금 기사의 성스러운 검과 날개 달린 황금 요정의 마법진이 황금 성채의 거대한 비밀 문을 활짝 엽니다! 고배당 40 페이라인.',
     characteristics: [
       '골드 & 흑요석(Obsidian)의 극명한 대비가 돋보이는 고딕 아키텍처 비주얼',
       '고배당 황금성 심볼의 스택(Stack) 누적 출현 메커니즘',
@@ -122,22 +154,30 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '황금성 로얄 에디션', desc: '5x4 확장 매트릭스 및 40 페이라인, 황금열쇠 락 해제 보너스 게임.' }
     ],
     bonusTrigger: '황금성 열쇠 심볼 3개 잠금 해제 시 비밀 보물 금고 룰렛 발동',
-    recommendedFor: '높은 페이라인 밀도와 금빛 다크 럭셔리 분위기를 선호하는 베테랑 이용자'
+    recommendedFor: '높은 페이라인 밀도와 금빛 다크 럭셔리 분위기를 선호하는 베테랑 이용자',
+    categoryBadge: '#4 중세 판타지',
+    userCount: '1,820명 이용중',
+    statusBadge: '고배당 보너스',
+    statusType: 'purple',
+    rtp: 'RTP 98.4%',
+    jackpot: '₩92,400,000',
+    volatility: '초고변동',
+    featureBullets: ['황금 기사의 발도 성문 개방', '천상 요정 마법 룰렛 보너스']
   },
   {
     id: 'yamato',
     number: '05',
-    nameKo: '야마토',
-    nameEn: 'Yamato (Space Battleship)',
-    tagline: '광활한 성운을 가르는 우주 전함, 압도적 회차 회전율과 빠른 템포',
+    nameKo: '야마토 골드함대',
+    nameEn: 'Yamato Gold Fleet',
+    tagline: '황금 전함 일제 주포사격 & 제독의 황금검',
     reels: '3릴 ~ 5릴 멀티',
     paylines: '5 ~ 25 페이라인',
     tempo: '스피디 (Rapid)',
     themeColor: 'from-indigo-950 via-slate-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(99, 102, 241, 0.3), transparent 70%)',
     accentHex: '#818cf8',
-    image: '/src/assets/images/game_yamato_galaxy_1790810402133.jpg',
-    summary: '우주 전함 야마토의 비장한 항해와 코스믹 성운을 배경으로 한 하이템포 릴게임. 1회차당 소요 시간이 바다이야기 대비 절반 수준으로 짧아 신속한 회차 분석을 원하는 유저에게 최적화되었습니다.',
+    image: '/src/assets/images/game_yamato_fleet_1791599464432.jpg',
+    summary: '황금 제독의 지휘 아래 거대한 황금 전함 야마토가 폭풍우를 가르고 진격합니다! 주포 일제 사격 애니메이션과 황금검 발도 연출 잭팟.',
     characteristics: [
       '스피디한 릴 가속 및 급제동 스톱 애니메이션',
       '우주 워프(Warp) 및 파동포 충전 연출의 보너스 카운트다운',
@@ -149,22 +189,30 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '야마토 5 (Cosmic Multi)', desc: '멀티라인 파동포 일제 사격 모드 및 복합 심볼 그리드 탑재.' }
     ],
     bonusTrigger: '파동포 게이지 100% 충전 또는 함교 스캐터 3개 출현 시 코스믹 배틀 보너스',
-    recommendedFor: '짧은 시간 동안 빠른 회차 순환과 기계적 메카닉 비주얼을 선호하는 이용자'
+    recommendedFor: '짧은 시간 동안 빠른 회차 순환과 기계적 메카닉 비주얼을 선호하는 이용자',
+    categoryBadge: '#5 정통 릴게임',
+    userCount: '1,780명 이용중',
+    statusBadge: '고배당 보너스',
+    statusType: 'purple',
+    rtp: 'RTP 98.7%',
+    jackpot: '₩97,450,000',
+    volatility: '초고변동',
+    featureBullets: ['황금 주포 일제 사격 예시', '황금검 세이버 잭팟']
   },
   {
     id: 'aladdin',
     number: '06',
-    nameKo: '알라딘',
-    nameEn: 'Aladdin & The Magic Lamp',
-    tagline: '사막의 황금 궁전과 신비로운 마법 램프의 지니가 펼치는 이국적 환상',
+    nameKo: '알라딘 램프의 요정',
+    nameEn: 'Aladdin Magic Lamp',
+    tagline: '사막의 황금 궁전과 신비로운 마법 램프 지니 잭팟',
     reels: '5릴 3열',
     paylines: '15 페이라인',
     tempo: '스토리형 (Narrative)',
     themeColor: 'from-amber-950 via-purple-950 to-[#07090E]',
     themeGradient: 'radial-gradient(ellipse at top, rgba(168, 85, 247, 0.25), transparent 70%)',
     accentHex: '#c084fc',
-    image: '/src/assets/images/game_sea_story_1790810370437.jpg',
-    summary: '아라비안나이트의 신비로운 밤하늘과 황금빛 오아시스 궁전을 무대로 한 릴게임. 마법 램프를 문지를 때 등장하는 거인 지니의 소원 연출과 양탄자 보너스가 이국적인 매력을 극대화합니다.',
+    image: '/src/assets/images/game_aladdin_lamp_1791598187692.jpg',
+    summary: '아라비안나이트의 신비로운 밤하늘 아래 보물 산더미와 요술 램프에서 피어오르는 보랏빛 연기! 거인 지니가 3가지 소원을 무작위 선사합니다.',
     characteristics: [
       '자수정과 황금 보석, 마법 램프 등 아라비아 무드의 이국적 심볼',
       '마법 양탄자 활공 시 무작위 릴에 와일드 심볼을 투척하는 지니 기믹',
@@ -175,7 +223,15 @@ export const GAMES_ARCHIVE: GameProfile[] = [
       { version: '알라딘 램프의 요정', desc: '5릴 15라인 확장 및 3가지 소원 선택형 보너스 피처 지원.' }
     ],
     bonusTrigger: '황금 마법 램프 3개 출현 시 지니가 3가지 보너스 소원 중 하나를 무작위 부여',
-    recommendedFor: '독창적이고 신비로운 세계관과 마법 램프 테마의 서사적 연출을 원하는 플레이어'
+    recommendedFor: '독창적이고 신비로운 세계관과 마법 램프 테마의 서사적 연출을 원하는 플레이어',
+    categoryBadge: '#6 아라비안 나이트',
+    userCount: '1,290명 이용중',
+    statusBadge: '신규 업데이트',
+    statusType: 'amber',
+    rtp: 'RTP 98.2%',
+    jackpot: '₩66,800,000',
+    volatility: '고변동',
+    featureBullets: ['황금 요술 램프 지니 소원', '마법 양탄자 와일드 콤보']
   }
 ];
 
